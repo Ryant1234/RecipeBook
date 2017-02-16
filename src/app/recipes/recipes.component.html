@@ -2,8 +2,8 @@
   <div class="col-md-5">
   Recipe List
   </div>
-<rb-recipe-list></rb-recipe-list>
+<rb-recipe-list (recipeSelected)="selectedRecipe = $event"></rb-recipe-list>
   <div class="col-md-7">
-  Recipe Detail
+<rb-recipe-detail [selectedRecipe]="selectedRecipe"></rb-recipe-detail>
   </div>
   </div>
