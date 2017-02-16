@@ -7,12 +7,20 @@ import {Recipe } from '../recipe'
 
 })
 export class RecipeListComponent implements OnInit {
-recipes: Recipe[] = [];
+recipes: Recipe[] = [
+new Recipe('Fried Chicken', 'Brilliant', 'http://www.texaschickenmalaysia.com/menu/chicken-2pc-chicken.png',
+[]
+),
+new Recipe('Burger', 'Burgerlicious', "http://www.finecooking.com/assets/uploads/posts/51161/051111023-01-bison-burger-recipe_xlg.jpg",
+[]
+)
+  
+]
 @Output() recipeSelected = new EventEmitter<Recipe>();
 
 
 
-recipe = new Recipe('Dummy','Dummy', 'http://cdn.inquisitr.com/wp-content/uploads/2015/02/Fake-food-manufacturers.jpg' );
+
   constructor() { }
 
   ngOnInit() {
