@@ -5,10 +5,10 @@ import {Recipe} from '../recipe'
   templateUrl: './recipe-item.component.html'
 })
 export class RecipeItemComponent implements OnInit {
-@Input() recipe: Recipe;
-recipeId: number;
+  @Input() recipe: Recipe;
+  recipeId: number;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
