@@ -21,4 +21,8 @@ new Recipe('Burger', 'Burgerlicious', "http://www.finecooking.com/assets/uploads
 getRecipes() {
   return this.recipes;
 }
+
+getRecipe (id: number) {
+  return this.recipes[id];
+};
 }
